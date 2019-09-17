@@ -1,0 +1,15 @@
+<p>This is SignUp2 Form</p>
+<form (submit) = "onSubmit()" [formGroup]="formSignUp">
+  <input placeholder="Email" formControlName="email" />
+  <br />
+  <br />
+  <input type="password" placeholder="Password" formControlName="password" />
+  <br />
+  <div formGroupName="subject">
+    <label> NodeJS<input type="checkbox" formControlName="nodeJS" /></label>
+    <label> Angular<input type="checkbox"  formControlName="angular" /></label>
+    <label> ReactJS<input type="checkbox" formControlName="react" /></label>
+  </div>
+  <br />
+  <button>Submit</button>
+</form>
