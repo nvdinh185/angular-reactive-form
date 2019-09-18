@@ -1,0 +1,6 @@
+<p>This is SignUp1 Form</p>
+<div *ngFor="let it of data">
+  <input placeholder="{{it.name}}" [(ngModel)]="it.value" />
+  <br /><br />
+</div>
+<button (click)="onSubmit()">Submit</button>
