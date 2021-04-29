@@ -11,11 +11,9 @@ export class Signup1Component implements OnInit {
     { name: 'email', value: '', validator: [{ required: true, min: 6, max: 10 }] },
     { name: 'password', value: '', validator: [{ required: true, min: 6, max: 10 }] }
   ]
-  constructor() {
-  }
+  constructor() { }
 
-  ngOnInit() {
-  }
+  ngOnInit() { }
 
   onSubmit() {
     let valid = false;

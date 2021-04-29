@@ -5,18 +5,18 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { SignupComponent } from './signup/signup.component';
+import { Signup1Component } from './signup1/signup.component';
 import { Signup2Component } from './signup2/signup.component';
 import { Signup3Component } from './signup3/signup.component';
-import { Signup1Component } from './signup1/signup.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     SignupComponent,
+    Signup1Component,
     Signup2Component,
-    Signup3Component,
-    Signup1Component
+    Signup3Component
   ],
   imports: [
     BrowserModule,
