@@ -9,7 +9,7 @@ import { FormGroup, FormBuilder } from '@angular/forms'
 export class Signup2Component implements OnInit {
 
   formSignUp: FormGroup;
-  constructor(private fb: FormBuilder) {}
+  constructor(private fb: FormBuilder) { }
 
   ngOnInit() {
     this.formSignUp = this.fb.group({
@@ -22,7 +22,9 @@ export class Signup2Component implements OnInit {
       })
     })
   }
+
   onSubmit() {
     console.log(this.formSignUp.value);
   }
+
 }

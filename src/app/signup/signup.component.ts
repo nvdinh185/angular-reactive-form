@@ -22,8 +22,8 @@ export class SignupComponent implements OnInit {
         react: new FormControl(false)
       })
     })
-  }  
-  
+  }
+
   onSubmit() {
     console.log(this.formSignUp.value);
   }

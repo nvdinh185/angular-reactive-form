@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormControl, FormBuilder, Validators } from '@angular/forms'
+import { FormGroup, FormControl, FormBuilder, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-signup3',
@@ -22,13 +22,14 @@ export class Signup3Component implements OnInit {
       })
     })
   }
+
   onSubmit() {
     console.log(this.formSignUp.value);
   }
 
-
 }
-function gmailValidator(formControl: FormControl) {
+
+const gmailValidator = (formControl: FormControl) => {
   if (formControl.value.includes('@gmail.com')) return null;
   else return { gmail: true };
 }
